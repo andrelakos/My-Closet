@@ -1,0 +1,10 @@
+CREATE TABLE my_closet (
+  id INTEGER PRIMARY KEY,
+  column INTEGER NOT NULL,
+  row INTEGER NOT NULL,
+  item TEXT UNIQUE DEFAULT 'Empty',
+);
+
+INSERT INTO my_closet(id, column, row, item)
+VALUES (1, 1, 1, 'Suit');
+SELECT * FROM my_closet;
